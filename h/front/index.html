@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clínica Médica</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="divPaciente">
+            <h1>LISTA DE PACIENTES</h1>
+            <ul id="lista-pacientes"></ul>
+        </div>
+        
+        <div id="divMedico">
+            <h1>LISTA DE MÉDICOS</h1>
+            <ul id="lista-medicos"></ul>
+        </div>
+
+        <div id="consultar">
+            <h1>Pesquisar consulta</h1>
+            <input type="text" id="nomePaciente" placeholder="Nome do paciente">
+            <button id="btn-pesquisar" onclick="buscarNome()"></button>
+            <div id="pesquisa-consulta">
+                <ul id="filtro-pesquisa"></ul>
+            </div>
+        </div>
+
+        <div id="inserir">
+            <h1 id="titulo-form">Cadastrar Paciente</h1>
+            <input type="hidden" id="paciente-id">
+            <input type="text" id="novo-paciente" placeholder="Nome do paciente">
+            <br><br>
+            <button id="btn-salvar" onclick="salvarPaciente()">Cadastrar</button>
+            <button id="btn-cancelar" onclick="cancelarEdicao()" style="display: none;">Cancelar</button>
+        </div>    
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
